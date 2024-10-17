@@ -1,25 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:vendor_app/routes/app_router.dart';
+import 'package:flutter/material.dart' deferred as material show WidgetsFlutterBinding, runApp;
+import 'package:vendor_app/app.dart';
+import 'package:vendor_app/provider_scope.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() async {
+  await material.loadLibrary();
 
-class MyApp extends StatelessWidget {
-  MyApp({super.key});
-  final _appRouter = AppRouter();
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp.router(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFFF2814),
-        ),
-        useMaterial3: true,
-      ),
-      routerConfig: _appRouter.config(),
-    );
-  }
+  material.WidgetsFlutterBinding.ensureInitialized();
+  // await initializer.Initializer.load();
+
+  material.runApp(
+    ProviderScope(
+      child: App(),
+    ),
+  );
 }

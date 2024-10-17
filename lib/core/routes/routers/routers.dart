@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:vendor_app/routes/app_router.dart';
+import 'package:vendor_app/core/routes/app_router.dart';
 
 final routers = [
   AutoRoute(page: HomeRoute.page, initial: true),

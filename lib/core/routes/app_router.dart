@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:vendor_app/routes/routers/routers.dart';
+import 'package:vendor_app/core/routes/routers/routers.dart';
 import 'package:vendor_app/view/counter_screen.dart';
 import 'package:vendor_app/view/home_screen.dart';
 
