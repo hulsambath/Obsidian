@@ -280,13 +280,13 @@ class ThemeConfig {
     //     decorationColor: colorScheme.onSurface,
     //   );
     // } else {
-      return ThemeConstant.defaultTextTheme.apply(
-        fontFamily: ThemeConstant.defaultFontFamily,
-        fontFamilyFallback: ThemeConstant.fontFamilyFallback,
-        bodyColor: colorScheme.onSurface,
-        displayColor: colorScheme.onSurface,
-        decorationColor: colorScheme.onSurface,
-      );
+    return ThemeConstant.defaultTextTheme.apply(
+      fontFamily: ThemeConstant.defaultFontFamily,
+      fontFamilyFallback: ThemeConstant.fontFamilyFallback,
+      bodyColor: colorScheme.onSurface,
+      displayColor: colorScheme.onSurface,
+      decorationColor: colorScheme.onSurface,
+    );
     // }
   }
 

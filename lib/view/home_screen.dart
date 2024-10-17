@@ -49,9 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 context.read<ThemeProvider>().toggleThemeMode();
               },
               label: dark ? const Text('Dark Mode') : const Text('Light Mode'),
-              icon: dark
-                  ? const Icon(Icons.dark_mode)
-                  : const Icon(Icons.light_mode),
+              icon: dark ? const Icon(Icons.dark_mode) : const Icon(Icons.light_mode),
             )
           ],
         ),

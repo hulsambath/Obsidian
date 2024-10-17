@@ -14,7 +14,7 @@ class ProviderScope extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers:  [
+      providers: [
         ListenableProvider<ThemeProvider>(
           create: (context) => ThemeProvider(),
         ),
