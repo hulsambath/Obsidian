@@ -208,7 +208,7 @@ class ThemeConfig {
         ),
       ),
       snackBarTheme: SnackBarThemeData(
-        backgroundColor: Color.fromRGBO(50, 50, 50, 1),
+        backgroundColor: const Color.fromRGBO(50, 50, 50, 1),
         contentTextStyle: textTheme.bodyMedium?.copyWith(color: _dark.surface),
         actionTextColor: _light.primary,
         shape: RoundedRectangleBorder(
