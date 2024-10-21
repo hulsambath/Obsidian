@@ -1,19 +1,13 @@
-import 'package:auto_route/auto_route.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:vendor_app/provider/theme_provider.dart';
+part of 'home_view.dart';
 
-import '../core/routes/app_router.dart';
-
-@RoutePage()
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class HomeAdaptive extends StatefulWidget {
+  const HomeAdaptive({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<HomeAdaptive> createState() => _HomeAdaptiveState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeAdaptiveState extends State<HomeAdaptive> {
   bool dark = false;
 
   @override
@@ -29,14 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(
               height: 12,
-            ),
-            ElevatedButton(
-              onPressed: () {
-                context.router.push(
-                  CounterRoute(title: 'Counter Page'),
-                );
-              },
-              child: const Text('Go to Counter Screen'),
             ),
             const SizedBox(
               height: 12,
