@@ -1,22 +1,30 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:vendor_app/core/routes/app_router.dart';
 import 'package:vendor_app/provider/theme_provider.dart';
 
 class App extends StatelessWidget {
-  App({super.key});
-  final _appRouter = AppRouter();
+  const App({
+    super.key,
+    required this.appRouter,
+  });
+
+  final AppRouter appRouter;
 
   @override
   Widget build(BuildContext context) {
     final ThemeProvider themeProvider = Provider.of<ThemeProvider>(context);
 
     return MaterialApp.router(
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       debugShowCheckedModeBanner: false,
       themeMode: themeProvider.themeMode,
       theme: themeProvider.lightTheme,
       darkTheme: themeProvider.darkTheme,
-      routerConfig: _appRouter.config(),
+      routerConfig: appRouter.config(),
     );
   }
 }

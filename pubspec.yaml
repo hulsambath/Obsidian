@@ -16,7 +16,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   auto_route: ^8.3.0
   provider: ^6.1.2
-  # google_fonts: ^6.2.1
+  easy_localization: ^3.0.7
 
 dev_dependencies:
   flutter_test:
@@ -25,11 +25,14 @@ dev_dependencies:
   flutter_lints: ^3.0.0
   auto_route_generator: ^8.0.0
   build_runner: ^2.4.11
+  
 
 flutter:
   uses-material-design: true
   # list giving the asset and other descriptors for the font. For
   # example:
+  assets:
+    - assets/translations/
   # fonts:
   #   - family: Schyler
   #     fonts:
