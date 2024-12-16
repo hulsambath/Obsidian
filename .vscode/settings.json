@@ -1,0 +1,28 @@
+{
+  "dart.openDevTools": "flutter",
+  "dart.analyzerInstrumentationLogFile": null,
+  "dart.enableCompletionCommitCharacters": true,
+  "dart.lineLength": 120,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.selectionHighlight": false,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.inlayHints.enabled": "offUnlessPressed"
+  },
+  "dart.analysisServerFolding": true,
+  "dart.analyzeAngularTemplates": false,
+  "dart.experimentalRefactors": true,
+  "dart.normalizeFileCasing": true,
+  "dart.previewCommitCharacters": true,
+  "files.autoSave": "afterDelay",
+}
