@@ -32,7 +32,7 @@ jobs:
 
       - name: Check Code Formats
         run: |
-          (dart format $(find lib -name "*.dart" -not \( -name "*.g.dart" -o -name "*.gr.dart" \)) --set-exit-if-changed --line-length 120)
+          dart format --enable-experiment=macros $(find lib -name "*.dart" -not \( -name "*.g.dart" -o -name "*.gr.dart" \)) --set-exit-if-changed --line-length 120
         shell: bash
 
       - name: Check Linters
@@ -44,7 +44,6 @@ jobs:
       - name: Execute Build Runner
         run: |
           dart run build_runner build -d
-
         shell: bash
 
       - name: Execute Tests
