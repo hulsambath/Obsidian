@@ -10,9 +10,12 @@ class BookingAdaptive extends StatefulWidget {
 class _BookingAdaptiveState extends State<BookingAdaptive> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
-        child: Text('Booking Screen'),
+        child: FilledButton(
+          onPressed: () async {},
+          child: const Text('Booking Screen'),
+        ),
       ),
     );
   }

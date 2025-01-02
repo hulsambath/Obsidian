@@ -8,14 +8,6 @@ class AppLocalizationLoader extends RootBundleAssetLoader {
     final json = await super.load(path, locale) ?? {};
 
     Map overriddenKeys = {};
-    // switch (locale.toLanguageTag()) {
-    //   case 'en':
-    //     overriddenKeys = RemoteConfigService.overriddenEnLocalKeys.get();
-    //     break;
-    //   case 'km':
-    //     overriddenKeys = RemoteConfigService.overriddenKmLocalKeys.get();
-    //     break;
-    // }
 
     for (final element in overriddenKeys.entries) {
       String key = element.key.toString();

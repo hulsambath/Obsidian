@@ -6,18 +6,24 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.0 <4.0.0'
+  sdk: '>=3.5.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-
 
   cupertino_icons: ^1.0.6
   auto_route: ^8.3.0
   provider: ^6.1.2
   easy_localization: ^3.0.7
   json_annotation: ^4.9.0
+  dio: ^5.7.0
+  logger: ^2.4.0
+  japx: ^2.2.0
+  copy_with_extension: ^6.0.0
+  tuple: ^2.0.2
+  os_detect: ^2.0.1
+  package_info_plus: ^4.0.0
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +33,7 @@ dev_dependencies:
   auto_route_generator: ^8.0.0
   build_runner: ^2.4.11
   json_serializable: ^6.8.0
+  copy_with_extension_gen: ^6.0.0
   
 
 flutter:

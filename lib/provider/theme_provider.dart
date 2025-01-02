@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:vendor_app/core/theme/theme_config.dart';
+import 'package:vendor_app/theme/theme_config.dart';
 
 class ThemeProvider extends ChangeNotifier {
   ThemeData get lightTheme => ThemeConfig.light().themeData;
