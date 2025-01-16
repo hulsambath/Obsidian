@@ -24,5 +24,4 @@
   "dart.experimentalRefactors": true,
   "dart.normalizeFileCasing": true,
   "dart.previewCommitCharacters": true,
-  "files.autoSave": "off",
 }
