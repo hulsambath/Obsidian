@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.hangmeas" "\0"
-            VALUE "FileDescription", "vendor_app" "\0"
+            VALUE "FileDescription", "cm_vendor_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "vendor_app" "\0"
+            VALUE "InternalName", "cm_vendor_app" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.hangmeas. All rights reserved." "\0"
-            VALUE "OriginalFilename", "vendor_app.exe" "\0"
-            VALUE "ProductName", "vendor_app" "\0"
+            VALUE "OriginalFilename", "cm_vendor_app.exe" "\0"
+            VALUE "ProductName", "cm_vendor_app" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

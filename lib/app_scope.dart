@@ -1,9 +1,9 @@
+import 'package:cm_vendor_app/constants/app_constants.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:vendor_app/app_localization_loader.dart';
-import 'package:vendor_app/constants/app_constants.dart';
-import 'package:vendor_app/provider_scope.dart';
-import 'package:vendor_app/routes/app_router.dart';
+import 'package:cm_vendor_app/app_localization_loader.dart';
+import 'package:cm_vendor_app/provider_scope.dart';
+import 'package:cm_vendor_app/core/routes/app_router.dart';
 
 class AppScope extends StatefulWidget {
   static AppRouter get router => _AppScopeState.instance._router;

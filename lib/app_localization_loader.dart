@@ -1,7 +1,7 @@
 import 'dart:ui';
-
 import 'package:easy_localization/easy_localization.dart';
 
+// TODO: allow load from Firebase remote config (check BookMe+ for samples)
 class AppLocalizationLoader extends RootBundleAssetLoader {
   @override
   Future<Map<String, dynamic>> load(String path, Locale locale) async {
