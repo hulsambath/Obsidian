@@ -1,13 +1,15 @@
-import 'package:flutter/foundation.dart';
+import 'package:cm_vendor_app/constants/api_constants.dart';
 import 'package:flutter/material.dart';
 
 class ThemeConstant {
-  static const Color brandColor = Color(0xFFFF2814);
+  static Color brandColor = Color(
+    int.parse(ApiConstant.brandColor.replaceFirst('#', 'FF'), radix: 16),
+  );
 
-  static String? get defaultFontFamily => kIsWeb ? null : enFrontFamily;
+  static String? get defaultFontFamily => enFrontFamily;
   static List<String>? fontFamilyFallback = [kmFrontFamily];
 
-  static const String enFrontFamily = 'Poppins';
+  static const String enFrontFamily = 'ProductSans';
   static const String kmFrontFamily = 'KantumruyPro';
 
   static const TextTheme defaultTextTheme = TextTheme(

@@ -11,7 +11,7 @@ class ThemeModeStorage extends EnumStorage<ThemeMode> {
   ThemeMode get themeMode => _themeMode ?? _initialThemeMode;
 
   ThemeMode get _initialThemeMode {
-    return ThemeMode.light;
+    return ThemeMode.dark;
   }
 
   Future<void> initialize() async {

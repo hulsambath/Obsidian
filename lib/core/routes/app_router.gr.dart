@@ -9,11 +9,11 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i6;
-import 'package:cm_vendor_app/view/accout/account_view.dart' as _i1;
-import 'package:cm_vendor_app/view/booking/booking_view.dart' as _i2;
-import 'package:cm_vendor_app/view/home/home_view.dart' as _i3;
-import 'package:cm_vendor_app/view/main/main_view.dart' as _i4;
-import 'package:cm_vendor_app/view/my_card/my_card_view.dart' as _i5;
+import 'package:cm_vendor_app/views/account/account_view.dart' as _i1;
+import 'package:cm_vendor_app/views/bookings/bookings_view.dart' as _i2;
+import 'package:cm_vendor_app/views/cart/cart_view.dart' as _i3;
+import 'package:cm_vendor_app/views/home/home_view.dart' as _i4;
+import 'package:cm_vendor_app/views/main/main_view.dart' as _i5;
 
 abstract class $AppRouter extends _i6.RootStackRouter {
   $AppRouter({super.navigatorKey});
@@ -26,28 +26,28 @@ abstract class $AppRouter extends _i6.RootStackRouter {
         child: const _i1.AccountView(),
       );
     },
-    BookingRoute.name: (routeData) {
+    BookingsRoute.name: (routeData) {
       return _i6.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i2.BookingView(),
+        child: const _i2.BookingsView(),
+      );
+    },
+    CartRoute.name: (routeData) {
+      return _i6.AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const _i3.CartView(),
       );
     },
     HomeRoute.name: (routeData) {
       return _i6.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i3.HomeView(),
+        child: const _i4.HomeView(),
       );
     },
     MainRoute.name: (routeData) {
       return _i6.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const _i4.MainView(),
-      );
-    },
-    MyCardRoute.name: (routeData) {
-      return _i6.AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const _i5.MyCardView(),
+        child: const _i5.MainView(),
       );
     },
   };
@@ -68,21 +68,35 @@ class AccountRoute extends _i6.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i2.BookingView]
-class BookingRoute extends _i6.PageRouteInfo<void> {
-  const BookingRoute({List<_i6.PageRouteInfo>? children})
+/// [_i2.BookingsView]
+class BookingsRoute extends _i6.PageRouteInfo<void> {
+  const BookingsRoute({List<_i6.PageRouteInfo>? children})
       : super(
-          BookingRoute.name,
+          BookingsRoute.name,
           initialChildren: children,
         );
 
-  static const String name = 'BookingRoute';
+  static const String name = 'BookingsRoute';
 
   static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [_i3.HomeView]
+/// [_i3.CartView]
+class CartRoute extends _i6.PageRouteInfo<void> {
+  const CartRoute({List<_i6.PageRouteInfo>? children})
+      : super(
+          CartRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CartRoute';
+
+  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
+}
+
+/// generated route for
+/// [_i4.HomeView]
 class HomeRoute extends _i6.PageRouteInfo<void> {
   const HomeRoute({List<_i6.PageRouteInfo>? children})
       : super(
@@ -96,7 +110,7 @@ class HomeRoute extends _i6.PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [_i4.MainView]
+/// [_i5.MainView]
 class MainRoute extends _i6.PageRouteInfo<void> {
   const MainRoute({List<_i6.PageRouteInfo>? children})
       : super(
@@ -105,20 +119,6 @@ class MainRoute extends _i6.PageRouteInfo<void> {
         );
 
   static const String name = 'MainRoute';
-
-  static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
-}
-
-/// generated route for
-/// [_i5.MyCardView]
-class MyCardRoute extends _i6.PageRouteInfo<void> {
-  const MyCardRoute({List<_i6.PageRouteInfo>? children})
-      : super(
-          MyCardRoute.name,
-          initialChildren: children,
-        );
-
-  static const String name = 'MyCardRoute';
 
   static const _i6.PageInfo<void> page = _i6.PageInfo<void>(name);
 }

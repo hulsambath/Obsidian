@@ -20,6 +20,7 @@ class _HomeAdaptiveState extends State<HomeAdaptive> {
           children: [
             Text(
               tr('label.home'),
+              style: TextStyle(color: ColorScheme.of(context).onPrimary),
             ),
             const SizedBox(
               height: 12,

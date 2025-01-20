@@ -6,13 +6,15 @@ enum ApiConstant {
   APP_SCHEME,
   API_URL,
   CLIENT_ID,
-  CLIENT_SECRET;
+  CLIENT_SECRET,
+  BRAND_COLOR;
 
   static final String appName = APP_NAME.value;
   static final String appScheme = APP_SCHEME.value;
   static final String apiUrl = API_URL.value;
   static final String clientSecret = CLIENT_ID.value;
   static final String clientId = CLIENT_SECRET.value;
+  static final String brandColor = BRAND_COLOR.value;
 
   String get value {
     // fromEnvironment only allow const, so we have to manually getting value with switch case.
@@ -27,6 +29,8 @@ enum ApiConstant {
         return const String.fromEnvironment('CLIENT_ID');
       case CLIENT_SECRET:
         return const String.fromEnvironment('CLIENT_SECRET');
+      case BRAND_COLOR:
+        return const String.fromEnvironment('BRAND_COLOR');
     }
   }
 }
