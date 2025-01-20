@@ -18,16 +18,6 @@ class _HomeAdaptiveState extends State<HomeAdaptive> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              tr('label.home'),
-              style: TextStyle(color: ColorScheme.of(context).onPrimary),
-            ),
-            const SizedBox(
-              height: 12,
-            ),
-            const SizedBox(
-              height: 12,
-            ),
             FilledButton.icon(
               onPressed: () {
                 setState(() {
@@ -38,24 +28,6 @@ class _HomeAdaptiveState extends State<HomeAdaptive> {
               label: dark ? const Text('Dark Mode') : const Text('Light Mode'),
               icon: dark ? const Icon(Icons.dark_mode) : const Icon(Icons.light_mode),
             ),
-            const SizedBox(
-              height: 12,
-            ),
-            FilledButton(
-              onPressed: () {
-                context.setLocale(const Locale('en'));
-              },
-              child: const Text('English'),
-            ),
-            const SizedBox(
-              height: 12,
-            ),
-            FilledButton(
-              onPressed: () {
-                context.setLocale(const Locale('km'));
-              },
-              child: const Text('Khmer'),
-            )
           ],
         ),
       ),
