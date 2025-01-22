@@ -45,12 +45,33 @@ class ThemeConfig {
       scaffoldBackgroundColor: colorScheme.surface,
       colorScheme: colorScheme,
       platform: platform,
+      filledButtonTheme: filledButton(colorScheme),
       splashFactory: splashFactory(platform),
       textTheme: buildTextTheme(colorScheme),
       textButtonTheme: TextButtonThemeData(
         style: (themeData.textButtonTheme.style ?? const ButtonStyle()).copyWith(
           splashFactory: splashFactory(themeData.platform),
         ),
+      ),
+    );
+  }
+
+  static FilledButtonThemeData filledButton(ColorScheme colorScheme) {
+    return FilledButtonThemeData(
+      style: ButtonStyle(
+        padding: WidgetStateProperty.all(const EdgeInsets.all(16.0)),
+        textStyle: WidgetStatePropertyAll(
+          ThemeConstant.defaultTextTheme.labelLarge!.copyWith(fontWeight: FontWeight.w700),
+        ),
+        shape: WidgetStatePropertyAll(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(8.0),
+          ),
+        ),
+        iconSize: const WidgetStatePropertyAll(18),
+        iconColor: WidgetStateProperty.all(Colors.white),
+        foregroundColor: WidgetStateProperty.all(Colors.white),
+        backgroundColor: WidgetStateProperty.all(colorScheme.primary),
       ),
     );
   }
