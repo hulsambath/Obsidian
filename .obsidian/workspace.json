@@ -39,10 +39,14 @@
             "id": "13d22ccd523339f7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "2025-01-24.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-01-24"
             }
           }
         ],
@@ -187,12 +191,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7c0461ea2d1c0364",
+  "active": "13d22ccd523339f7",
   "lastOpenFiles": [
-    "hello.md",
-    "2025-01-24.md",
     "Home Screen.md",
     "Flavor.md",
+    "2025-01-24.md",
+    "LICENSE",
+    "hello.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Untitled"
