@@ -48,9 +48,20 @@ class ThemeConfig {
       filledButtonTheme: filledButton(colorScheme),
       splashFactory: splashFactory(platform),
       textTheme: buildTextTheme(colorScheme),
-      textButtonTheme: TextButtonThemeData(
-        style: (themeData.textButtonTheme.style ?? const ButtonStyle()).copyWith(
-          splashFactory: splashFactory(themeData.platform),
+      textButtonTheme: textButtonThemeData(colorScheme),
+    );
+  }
+
+  static TextButtonThemeData textButtonThemeData(ColorScheme colorScheme) {
+    return TextButtonThemeData(
+      style: const ButtonStyle().copyWith(
+        alignment: Alignment.center,
+        foregroundColor: WidgetStateProperty.all(colorScheme.primary),
+        textStyle: WidgetStateProperty.all(
+          ThemeConstant.defaultTextTheme.labelLarge!.copyWith(
+            fontWeight: FontWeight.w700,
+            letterSpacing: 0.25,
+          ),
         ),
       ),
     );
